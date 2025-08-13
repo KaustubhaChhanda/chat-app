@@ -107,9 +107,8 @@ const ChatContainer = () => {
             <div className="text-center text-xs">
               <img
                 src={
-                  msg.senderId === authUser._id
-                    ? authUser?.profilePic || selectedUser?.profilePic || assets.avatar_icon
-                    : assets.avatar_icon
+                  msg.senderId === authUser._id ? authUser?.profilePic || assets.avatar_icon
+                  : selectedUser?.profilePic || assets.avatar_icon
                 }
                 alt=""
                 className="w-7 rounded-full"
